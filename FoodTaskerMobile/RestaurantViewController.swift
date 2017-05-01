@@ -34,7 +34,7 @@ class RestaurantViewController: UIViewController {
     
     func loadRestaurants() {
         
-        showActivityIndicator()
+        Helpers.showActivityIndicator(activityIndicator, view)
         
         APIManager.shared.getRestaurants { (json) in
             
@@ -49,41 +49,19 @@ class RestaurantViewController: UIViewController {
                     }
                     
                     self.tbvRestaurant.reloadData()
-                    self.hideActivityIndicator()
+                    Helpers.hideActivityIndicator(self.activityIndicator)
                 }
             }
         }
     }
     
-    func loadImage(imageView: UIImageView, urlString: String) {
-        let imgURL: URL = URL(string: urlString)!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        URLSession.shared.dataTask(with: imgURL) { (data, response, error) in
+        if segue.identifier == "MealList" {
             
-            guard let data = data, error == nil else { return}
-            
-            DispatchQueue.main.async {
-                imageView.image = UIImage(data: data)
-            }
-            
-        }.resume()
-        
-    }
-    
-    func showActivityIndicator() {
-        
-        activityIndicator.frame = CGRect(x: 0.0, y: 0.0, width: 40.0, height: 40.0)
-        activityIndicator.center = view.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
-        activityIndicator.color = UIColor.black
-        
-        view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
-    }
-    
-    func hideActivityIndicator() {
-        activityIndicator.stopAnimating()
+            let controller = segue.destination as! MealListTableViewController
+            controller.restaurant = restaurants[(tbvRestaurant.indexPathForSelectedRow?.row)!]
+        }
     }
     
     
@@ -132,7 +110,8 @@ extension RestaurantViewController: UITableViewDelegate, UITableViewDataSource {
         cell.lbRestaurantAddress.text = restaurant.address!
         
         if let logoName = restaurant.logo {
-            loadImage(imageView: cell.imgRestaurantLogo, urlString: logoName)
+            Helpers.loadImage(cell.imgRestaurantLogo, logoName)
+            
         }
         
         return cell

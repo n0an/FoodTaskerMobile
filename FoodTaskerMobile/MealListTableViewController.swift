@@ -10,9 +10,46 @@ import UIKit
 
 class MealListTableViewController: UITableViewController {
     
+    var restaurant: Restaurant?
+    var meals = [Meal]()
+    
+    let activityIndicator = UIActivityIndicatorView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let restaurantName = restaurant?.name {
+            self.navigationItem.title = restaurantName
+        }
+        
+        loadMeals()
+        
+    }
+    
+    func loadMeals() {
+        
+        Helpers.showActivityIndicator(activityIndicator, view)
+        
+        if let restaurantId = restaurant?.id {
+            
+            APIManager.shared.getMeals(restaurantId: restaurantId, completionHandler: { (json) in
+                
+                if json != .null {
+                    self.meals = []
+                    
+                    if let tempMeals = json["meals"].array {
+                        
+                        for item in tempMeals {
+                            let meal = Meal(json: item)
+                            self.meals.append(meal)
+                        }
+                        
+                        self.tableView.reloadData()
+                        Helpers.hideActivityIndicator(self.activityIndicator)
+                    }
+                }
+            })
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -20,14 +57,25 @@ class MealListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return meals.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MealCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MealCell", for: indexPath) as! MealViewCell
+        
+        let meal = meals[indexPath.row]
+        cell.lbMealName.text = meal.name
+        cell.lbMealShortDescription.text = meal.short_description
+        
+        if let price = meal.price {
+            cell.lbMealPrice.text = "$\(price)"
+        }
+        
+        if let image = meal.image {
+            Helpers.loadImage(cell.imgMealImage, "\(image)")
+        }
         
         return cell
     }
     
 }
-

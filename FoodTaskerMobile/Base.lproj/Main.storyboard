@@ -278,7 +278,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealCell" id="sHR-wn-m55">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealCell" id="sHR-wn-m55" customClass="MealViewCell" customModule="FoodTaskerMobile" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sHR-wn-m55" id="6B1-71-k2I">
@@ -326,6 +326,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imgMealImage" destination="Ddi-sF-0kp" id="wOT-zG-ZlQ"/>
+                                    <outlet property="lbMealName" destination="tD5-Hd-JRd" id="VfG-tM-ynf"/>
+                                    <outlet property="lbMealPrice" destination="AMR-NK-XCs" id="vkc-pU-q3h"/>
+                                    <outlet property="lbMealShortDescription" destination="jgt-7b-yRv" id="OQr-q9-sPx"/>
                                     <segue destination="auq-wg-alf" kind="show" identifier="MealDetails" id="K4U-t6-L9s">
                                         <nil key="action"/>
                                     </segue>

@@ -27,6 +27,9 @@
 		18ADE6CB1EB7523700706C7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6CA1EB7523700706C7B /* Constants.swift */; };
 		18ADE6CD1EB7631300706C7B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6CC1EB7631300706C7B /* Restaurant.swift */; };
 		18ADE6D01EB7645900706C7B /* RestaurantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6CF1EB7645900706C7B /* RestaurantViewCell.swift */; };
+		18ADE6D21EB76BBC00706C7B /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6D11EB76BBC00706C7B /* MealViewCell.swift */; };
+		18ADE6D41EB76D7C00706C7B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6D31EB76D7C00706C7B /* Meal.swift */; };
+		18ADE6D61EB76D8D00706C7B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6D51EB76D8D00706C7B /* Helpers.swift */; };
 		38D0FD83F20DB76FCADEA575 /* Pods_FoodTaskerMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		18ADE6CA1EB7523700706C7B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18ADE6CC1EB7631300706C7B /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		18ADE6CF1EB7645900706C7B /* RestaurantViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewCell.swift; sourceTree = "<group>"; };
+		18ADE6D11EB76BBC00706C7B /* MealViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
+		18ADE6D31EB76D7C00706C7B /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		18ADE6D51EB76D8D00706C7B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		57F8F229AC9634BA3DCABF1F /* Pods-FoodTaskerMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.release.xcconfig"; sourceTree = "<group>"; };
 		6CF3F68A0CB29A5BE5FA588D /* Pods-FoodTaskerMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTaskerMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +155,7 @@
 			children = (
 				18ADE6C21EB73DA800706C7B /* User.swift */,
 				18ADE6CC1EB7631300706C7B /* Restaurant.swift */,
+				18ADE6D31EB76D7C00706C7B /* Meal.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 				18ADE6C01EB73D8B00706C7B /* FBManager.swift */,
 				18ADE6C81EB7521D00706C7B /* APIManager.swift */,
 				18ADE6CA1EB7523700706C7B /* Constants.swift */,
+				18ADE6D51EB76D8D00706C7B /* Helpers.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				18ADE6CF1EB7645900706C7B /* RestaurantViewCell.swift */,
+				18ADE6D11EB76BBC00706C7B /* MealViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -311,9 +320,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18ADE6C51EB73DBF00706C7B /* LoginViewController.swift in Sources */,
+				18ADE6D61EB76D8D00706C7B /* Helpers.swift in Sources */,
 				18ADE6B11EB728AD00706C7B /* TrayViewController.swift in Sources */,
 				18ADE6A91EB7286400706C7B /* RestaurantViewController.swift in Sources */,
 				18ADE6B31EB728B900706C7B /* PaymentViewController.swift in Sources */,
+				18ADE6D41EB76D7C00706C7B /* Meal.swift in Sources */,
 				18ADE6AF1EB728A000706C7B /* MealDetailsViewController.swift in Sources */,
 				18ADE6CD1EB7631300706C7B /* Restaurant.swift in Sources */,
 				18ADE6AB1EB7287900706C7B /* CustomerMenuTableViewController.swift in Sources */,
@@ -324,6 +335,7 @@
 				18ADE6AD1EB7288D00706C7B /* MealListTableViewController.swift in Sources */,
 				18ADE6C91EB7521D00706C7B /* APIManager.swift in Sources */,
 				18ADE6CB1EB7523700706C7B /* Constants.swift in Sources */,
+				18ADE6D21EB76BBC00706C7B /* MealViewCell.swift in Sources */,
 				18ADE6B51EB728C500706C7B /* OrderViewController.swift in Sources */,
 				18ADE6C31EB73DA800706C7B /* User.swift in Sources */,
 			);
