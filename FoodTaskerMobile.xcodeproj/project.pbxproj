@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18ADE6971EB7266500706C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6961EB7266500706C7B /* AppDelegate.swift */; };
+		18ADE69C1EB7266500706C7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ADE69A1EB7266500706C7B /* Main.storyboard */; };
+		18ADE69E1EB7266500706C7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18ADE69D1EB7266500706C7B /* Assets.xcassets */; };
+		18ADE6A11EB7266500706C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ADE69F1EB7266500706C7B /* LaunchScreen.storyboard */; };
+		18ADE6A91EB7286400706C7B /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6A81EB7286400706C7B /* RestaurantViewController.swift */; };
+		18ADE6AB1EB7287900706C7B /* CustomerMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6AA1EB7287900706C7B /* CustomerMenuTableViewController.swift */; };
+		18ADE6AD1EB7288D00706C7B /* MealListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6AC1EB7288D00706C7B /* MealListTableViewController.swift */; };
+		18ADE6AF1EB728A000706C7B /* MealDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6AE1EB728A000706C7B /* MealDetailsViewController.swift */; };
+		18ADE6B11EB728AD00706C7B /* TrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6B01EB728AD00706C7B /* TrayViewController.swift */; };
+		18ADE6B31EB728B900706C7B /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6B21EB728B900706C7B /* PaymentViewController.swift */; };
+		18ADE6B51EB728C500706C7B /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6B41EB728C500706C7B /* OrderViewController.swift */; };
+		18ADE6B91EB7297E00706C7B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6B81EB7297E00706C7B /* SWRevealViewController.m */; };
+		18ADE6BD1EB72F8700706C7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADE6BC1EB72F8700706C7B /* MapKit.framework */; };
+		38D0FD83F20DB76FCADEA575 /* Pods_FoodTaskerMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18ADE6931EB7266500706C7B /* FoodTaskerMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTaskerMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ADE6961EB7266500706C7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18ADE69B1EB7266500706C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18ADE69D1EB7266500706C7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18ADE6A01EB7266500706C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18ADE6A21EB7266500706C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ADE6A81EB7286400706C7B /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		18ADE6AA1EB7287900706C7B /* CustomerMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerMenuTableViewController.swift; sourceTree = "<group>"; };
+		18ADE6AC1EB7288D00706C7B /* MealListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealListTableViewController.swift; sourceTree = "<group>"; };
+		18ADE6AE1EB728A000706C7B /* MealDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailsViewController.swift; sourceTree = "<group>"; };
+		18ADE6B01EB728AD00706C7B /* TrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrayViewController.swift; sourceTree = "<group>"; };
+		18ADE6B21EB728B900706C7B /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		18ADE6B41EB728C500706C7B /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		18ADE6B61EB7297D00706C7B /* FoodTaskerMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodTaskerMobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		18ADE6B71EB7297E00706C7B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		18ADE6B81EB7297E00706C7B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		18ADE6BC1EB72F8700706C7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		57F8F229AC9634BA3DCABF1F /* Pods-FoodTaskerMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.release.xcconfig"; sourceTree = "<group>"; };
+		6CF3F68A0CB29A5BE5FA588D /* Pods-FoodTaskerMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTaskerMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18ADE6901EB7266500706C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ADE6BD1EB72F8700706C7B /* MapKit.framework in Frameworks */,
+				38D0FD83F20DB76FCADEA575 /* Pods_FoodTaskerMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18ADE68A1EB7266500706C7B = {
+			isa = PBXGroup;
+			children = (
+				18ADE6951EB7266500706C7B /* FoodTaskerMobile */,
+				18ADE6941EB7266500706C7B /* Products */,
+				18ADE6BB1EB72F8700706C7B /* Frameworks */,
+				6153575C9DAD19A9ABE10EE1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		18ADE6941EB7266500706C7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6931EB7266500706C7B /* FoodTaskerMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18ADE6951EB7266500706C7B /* FoodTaskerMobile */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6BA1EB7298700706C7B /* Libs */,
+				18ADE6961EB7266500706C7B /* AppDelegate.swift */,
+				18ADE69A1EB7266500706C7B /* Main.storyboard */,
+				18ADE69D1EB7266500706C7B /* Assets.xcassets */,
+				18ADE69F1EB7266500706C7B /* LaunchScreen.storyboard */,
+				18ADE6A21EB7266500706C7B /* Info.plist */,
+				18ADE6A81EB7286400706C7B /* RestaurantViewController.swift */,
+				18ADE6AA1EB7287900706C7B /* CustomerMenuTableViewController.swift */,
+				18ADE6AC1EB7288D00706C7B /* MealListTableViewController.swift */,
+				18ADE6AE1EB728A000706C7B /* MealDetailsViewController.swift */,
+				18ADE6B01EB728AD00706C7B /* TrayViewController.swift */,
+				18ADE6B21EB728B900706C7B /* PaymentViewController.swift */,
+				18ADE6B41EB728C500706C7B /* OrderViewController.swift */,
+			);
+			path = FoodTaskerMobile;
+			sourceTree = "<group>";
+		};
+		18ADE6BA1EB7298700706C7B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6B71EB7297E00706C7B /* SWRevealViewController.h */,
+				18ADE6B81EB7297E00706C7B /* SWRevealViewController.m */,
+				18ADE6B61EB7297D00706C7B /* FoodTaskerMobile-Bridging-Header.h */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		18ADE6BB1EB72F8700706C7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6BC1EB72F8700706C7B /* MapKit.framework */,
+				B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6153575C9DAD19A9ABE10EE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CF3F68A0CB29A5BE5FA588D /* Pods-FoodTaskerMobile.debug.xcconfig */,
+				57F8F229AC9634BA3DCABF1F /* Pods-FoodTaskerMobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18ADE6921EB7266500706C7B /* FoodTaskerMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18ADE6A51EB7266500706C7B /* Build configuration list for PBXNativeTarget "FoodTaskerMobile" */;
+			buildPhases = (
+				8392DF5AD82F2723F3E40BA4 /* [CP] Check Pods Manifest.lock */,
+				18ADE68F1EB7266500706C7B /* Sources */,
+				18ADE6901EB7266500706C7B /* Frameworks */,
+				18ADE6911EB7266500706C7B /* Resources */,
+				161DAC4A8B36795A54FCD089 /* [CP] Embed Pods Frameworks */,
+				96A6555DAB7B1D5F2B880F54 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodTaskerMobile;
+			productName = FoodTaskerMobile;
+			productReference = 18ADE6931EB7266500706C7B /* FoodTaskerMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18ADE68B1EB7266500706C7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Anton Novoselov";
+				TargetAttributes = {
+					18ADE6921EB7266500706C7B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 358V8FBM3U;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 18ADE68E1EB7266500706C7B /* Build configuration list for PBXProject "FoodTaskerMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18ADE68A1EB7266500706C7B;
+			productRefGroup = 18ADE6941EB7266500706C7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18ADE6921EB7266500706C7B /* FoodTaskerMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18ADE6911EB7266500706C7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ADE6A11EB7266500706C7B /* LaunchScreen.storyboard in Resources */,
+				18ADE69E1EB7266500706C7B /* Assets.xcassets in Resources */,
+				18ADE69C1EB7266500706C7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		161DAC4A8B36795A54FCD089 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8392DF5AD82F2723F3E40BA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96A6555DAB7B1D5F2B880F54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18ADE68F1EB7266500706C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ADE6B11EB728AD00706C7B /* TrayViewController.swift in Sources */,
+				18ADE6A91EB7286400706C7B /* RestaurantViewController.swift in Sources */,
+				18ADE6B31EB728B900706C7B /* PaymentViewController.swift in Sources */,
+				18ADE6AF1EB728A000706C7B /* MealDetailsViewController.swift in Sources */,
+				18ADE6AB1EB7287900706C7B /* CustomerMenuTableViewController.swift in Sources */,
+				18ADE6971EB7266500706C7B /* AppDelegate.swift in Sources */,
+				18ADE6B91EB7297E00706C7B /* SWRevealViewController.m in Sources */,
+				18ADE6AD1EB7288D00706C7B /* MealListTableViewController.swift in Sources */,
+				18ADE6B51EB728C500706C7B /* OrderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18ADE69A1EB7266500706C7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18ADE69B1EB7266500706C7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18ADE69F1EB7266500706C7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18ADE6A01EB7266500706C7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18ADE6A31EB7266500706C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18ADE6A41EB7266500706C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18ADE6A61EB7266500706C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF3F68A0CB29A5BE5FA588D /* Pods-FoodTaskerMobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = FoodTaskerMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.FoodTaskerMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTaskerMobile/FoodTaskerMobile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		18ADE6A71EB7266500706C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57F8F229AC9634BA3DCABF1F /* Pods-FoodTaskerMobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = FoodTaskerMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.FoodTaskerMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTaskerMobile/FoodTaskerMobile-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18ADE68E1EB7266500706C7B /* Build configuration list for PBXProject "FoodTaskerMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ADE6A31EB7266500706C7B /* Debug */,
+				18ADE6A41EB7266500706C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ADE6A51EB7266500706C7B /* Build configuration list for PBXNativeTarget "FoodTaskerMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ADE6A61EB7266500706C7B /* Debug */,
+				18ADE6A71EB7266500706C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18ADE68B1EB7266500706C7B /* Project object */;
+}
