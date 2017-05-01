@@ -358,7 +358,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_image" translatesAutoresizingMaskIntoConstraints="NO" id="J2R-VW-Qfg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_image" translatesAutoresizingMaskIntoConstraints="NO" id="J2R-VW-Qfg">
                                 <rect key="frame" x="0.0" y="64" width="375" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="2b0-c4-YkL"/>
@@ -398,6 +398,9 @@
                                         <state key="normal" title="ADD TO TRAY">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addToTray:" destination="auq-wg-alf" eventType="touchUpInside" id="111-fb-9Ky"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7W-wk-Wyn">
                                         <rect key="frame" x="287" y="55.5" width="76" height="20.5"/>
@@ -427,6 +430,9 @@
                                         <state key="normal" title="+">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addQty:" destination="auq-wg-alf" eventType="touchUpInside" id="ttc-eV-qnQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeJ-cS-HRa">
                                         <rect key="frame" x="337" y="5" width="30" height="30"/>
@@ -438,6 +444,9 @@
                                         <state key="normal" title="-">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="removeQty:" destination="auq-wg-alf" eventType="touchUpInside" id="Hde-9G-x1k"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -484,6 +493,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imgMeal" destination="J2R-VW-Qfg" id="XLe-pg-8Dh"/>
+                        <outlet property="lbMealName" destination="eob-Fc-iRk" id="qem-M1-1cO"/>
+                        <outlet property="lbMealShortDescription" destination="P8Z-hV-R4O" id="GLL-e5-B51"/>
+                        <outlet property="lbQty" destination="ngC-Nf-yWT" id="1Fb-nC-JgA"/>
+                        <outlet property="lbTotal" destination="c7W-wk-Wyn" id="fpy-8b-Y0r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATk-a5-StY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
