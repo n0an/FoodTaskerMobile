@@ -31,6 +31,8 @@
 		18ADE6D41EB76D7C00706C7B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6D31EB76D7C00706C7B /* Meal.swift */; };
 		18ADE6D61EB76D8D00706C7B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6D51EB76D8D00706C7B /* Helpers.swift */; };
 		18ADE6D81EB7723400706C7B /* Tray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6D71EB7723400706C7B /* Tray.swift */; };
+		18ADE6DA1EB7787800706C7B /* TrayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6D91EB7787800706C7B /* TrayViewCell.swift */; };
+		18ADE6DC1EB77E6300706C7B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADE6DB1EB77E6300706C7B /* CoreLocation.framework */; };
 		38D0FD83F20DB76FCADEA575 /* Pods_FoodTaskerMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		18ADE6D31EB76D7C00706C7B /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		18ADE6D51EB76D8D00706C7B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		18ADE6D71EB7723400706C7B /* Tray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tray.swift; sourceTree = "<group>"; };
+		18ADE6D91EB7787800706C7B /* TrayViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrayViewCell.swift; sourceTree = "<group>"; };
+		18ADE6DB1EB77E6300706C7B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		57F8F229AC9634BA3DCABF1F /* Pods-FoodTaskerMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.release.xcconfig"; sourceTree = "<group>"; };
 		6CF3F68A0CB29A5BE5FA588D /* Pods-FoodTaskerMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTaskerMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ADE6DC1EB77E6300706C7B /* CoreLocation.framework in Frameworks */,
 				18ADE6BD1EB72F8700706C7B /* MapKit.framework in Frameworks */,
 				38D0FD83F20DB76FCADEA575 /* Pods_FoodTaskerMobile.framework in Frameworks */,
 			);
@@ -131,6 +136,7 @@
 		18ADE6BB1EB72F8700706C7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18ADE6DB1EB77E6300706C7B /* CoreLocation.framework */,
 				18ADE6BC1EB72F8700706C7B /* MapKit.framework */,
 				B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */,
 			);
@@ -179,6 +185,7 @@
 			children = (
 				18ADE6CF1EB7645900706C7B /* RestaurantViewCell.swift */,
 				18ADE6D11EB76BBC00706C7B /* MealViewCell.swift */,
+				18ADE6D91EB7787800706C7B /* TrayViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -323,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18ADE6C51EB73DBF00706C7B /* LoginViewController.swift in Sources */,
+				18ADE6DA1EB7787800706C7B /* TrayViewCell.swift in Sources */,
 				18ADE6D61EB76D8D00706C7B /* Helpers.swift in Sources */,
 				18ADE6B11EB728AD00706C7B /* TrayViewController.swift in Sources */,
 				18ADE6A91EB7286400706C7B /* RestaurantViewController.swift in Sources */,
