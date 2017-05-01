@@ -20,6 +20,9 @@
 		18ADE6B51EB728C500706C7B /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6B41EB728C500706C7B /* OrderViewController.swift */; };
 		18ADE6B91EB7297E00706C7B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6B81EB7297E00706C7B /* SWRevealViewController.m */; };
 		18ADE6BD1EB72F8700706C7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADE6BC1EB72F8700706C7B /* MapKit.framework */; };
+		18ADE6C11EB73D8B00706C7B /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6C01EB73D8B00706C7B /* FBManager.swift */; };
+		18ADE6C31EB73DA800706C7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6C21EB73DA800706C7B /* User.swift */; };
+		18ADE6C51EB73DBF00706C7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6C41EB73DBF00706C7B /* LoginViewController.swift */; };
 		38D0FD83F20DB76FCADEA575 /* Pods_FoodTaskerMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,10 @@
 		18ADE6B71EB7297E00706C7B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		18ADE6B81EB7297E00706C7B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		18ADE6BC1EB72F8700706C7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		18ADE6BF1EB73BF500706C7B /* FoodTaskerMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodTaskerMobile.entitlements; sourceTree = "<group>"; };
+		18ADE6C01EB73D8B00706C7B /* FBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		18ADE6C21EB73DA800706C7B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		18ADE6C41EB73DBF00706C7B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		57F8F229AC9634BA3DCABF1F /* Pods-FoodTaskerMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.release.xcconfig"; sourceTree = "<group>"; };
 		6CF3F68A0CB29A5BE5FA588D /* Pods-FoodTaskerMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTaskerMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,19 +87,16 @@
 		18ADE6951EB7266500706C7B /* FoodTaskerMobile */ = {
 			isa = PBXGroup;
 			children = (
-				18ADE6BA1EB7298700706C7B /* Libs */,
 				18ADE6961EB7266500706C7B /* AppDelegate.swift */,
+				18ADE6BF1EB73BF500706C7B /* FoodTaskerMobile.entitlements */,
+				18ADE6C61EB73DD100706C7B /* Model */,
+				18ADE6BE1EB73BE400706C7B /* Controller */,
+				18ADE6C71EB740DA00706C7B /* Service */,
+				18ADE6BA1EB7298700706C7B /* Libs */,
 				18ADE69A1EB7266500706C7B /* Main.storyboard */,
 				18ADE69D1EB7266500706C7B /* Assets.xcassets */,
 				18ADE69F1EB7266500706C7B /* LaunchScreen.storyboard */,
 				18ADE6A21EB7266500706C7B /* Info.plist */,
-				18ADE6A81EB7286400706C7B /* RestaurantViewController.swift */,
-				18ADE6AA1EB7287900706C7B /* CustomerMenuTableViewController.swift */,
-				18ADE6AC1EB7288D00706C7B /* MealListTableViewController.swift */,
-				18ADE6AE1EB728A000706C7B /* MealDetailsViewController.swift */,
-				18ADE6B01EB728AD00706C7B /* TrayViewController.swift */,
-				18ADE6B21EB728B900706C7B /* PaymentViewController.swift */,
-				18ADE6B41EB728C500706C7B /* OrderViewController.swift */,
 			);
 			path = FoodTaskerMobile;
 			sourceTree = "<group>";
@@ -114,6 +118,37 @@
 				B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18ADE6BE1EB73BE400706C7B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6A81EB7286400706C7B /* RestaurantViewController.swift */,
+				18ADE6AA1EB7287900706C7B /* CustomerMenuTableViewController.swift */,
+				18ADE6AC1EB7288D00706C7B /* MealListTableViewController.swift */,
+				18ADE6AE1EB728A000706C7B /* MealDetailsViewController.swift */,
+				18ADE6B01EB728AD00706C7B /* TrayViewController.swift */,
+				18ADE6B21EB728B900706C7B /* PaymentViewController.swift */,
+				18ADE6B41EB728C500706C7B /* OrderViewController.swift */,
+				18ADE6C41EB73DBF00706C7B /* LoginViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		18ADE6C61EB73DD100706C7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6C21EB73DA800706C7B /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		18ADE6C71EB740DA00706C7B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6C01EB73D8B00706C7B /* FBManager.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 		6153575C9DAD19A9ABE10EE1 /* Pods */ = {
@@ -163,6 +198,11 @@
 						DevelopmentTeam = 358V8FBM3U;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -250,15 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ADE6C51EB73DBF00706C7B /* LoginViewController.swift in Sources */,
 				18ADE6B11EB728AD00706C7B /* TrayViewController.swift in Sources */,
 				18ADE6A91EB7286400706C7B /* RestaurantViewController.swift in Sources */,
 				18ADE6B31EB728B900706C7B /* PaymentViewController.swift in Sources */,
 				18ADE6AF1EB728A000706C7B /* MealDetailsViewController.swift in Sources */,
 				18ADE6AB1EB7287900706C7B /* CustomerMenuTableViewController.swift in Sources */,
+				18ADE6C11EB73D8B00706C7B /* FBManager.swift in Sources */,
 				18ADE6971EB7266500706C7B /* AppDelegate.swift in Sources */,
 				18ADE6B91EB7297E00706C7B /* SWRevealViewController.m in Sources */,
 				18ADE6AD1EB7288D00706C7B /* MealListTableViewController.swift in Sources */,
 				18ADE6B51EB728C500706C7B /* OrderViewController.swift in Sources */,
+				18ADE6C31EB73DA800706C7B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FoodTaskerMobile/FoodTaskerMobile.entitlements;
 				DEVELOPMENT_TEAM = 358V8FBM3U;
 				INFOPLIST_FILE = FoodTaskerMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -402,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FoodTaskerMobile/FoodTaskerMobile.entitlements;
 				DEVELOPMENT_TEAM = 358V8FBM3U;
 				INFOPLIST_FILE = FoodTaskerMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -431,6 +476,7 @@
 				18ADE6A71EB7266500706C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

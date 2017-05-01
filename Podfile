@@ -7,5 +7,10 @@ target 'FoodTaskerMobile' do
 
   # Pods for FoodTaskerMobile
   pod 'Stripe'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
 end
