@@ -161,7 +161,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DriverOrdersCell" id="psN-pc-Ckp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DriverOrdersCell" id="psN-pc-Ckp" customClass="DriverOrderCell" customModule="FoodTaskerMobile" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="122"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="psN-pc-Ckp" id="UNa-5Y-gxG">
@@ -232,6 +232,12 @@
                                         <constraint firstAttribute="trailing" secondItem="i73-q7-lYZ" secondAttribute="trailing" id="wm0-BY-xyV"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgCustomerAvatar" destination="ZZX-cV-AEU" id="1hT-9x-BRM"/>
+                                    <outlet property="lbCustomerAddress" destination="iYX-7O-kOn" id="4DL-KM-M74"/>
+                                    <outlet property="lbCustomerName" destination="0lF-V9-jJu" id="hJR-Yh-teP"/>
+                                    <outlet property="lbRestaurantName" destination="G1J-HR-Yjd" id="Dm5-0X-ZV7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -244,6 +250,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuBarButton" destination="c9l-Yg-R4G" id="Bvj-Qp-UYI"/>
+                        <segue destination="Id0-N6-wcT" kind="show" identifier="CurrentDelivery" id="M14-J7-rh8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3z-ug-Tyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1665,9 +1672,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wDU-X7-jRD"/>
-        <segue reference="6Y9-GT-lEo"/>
+        <segue reference="prj-X6-DGr"/>
         <segue reference="liC-LL-Axh"/>
         <segue reference="GPv-Q5-G1K"/>
         <segue reference="kfw-Qg-6DY"/>
+        <segue reference="M14-J7-rh8"/>
     </inferredMetricsTieBreakers>
 </document>

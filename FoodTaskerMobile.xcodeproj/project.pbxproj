@@ -38,6 +38,8 @@
 		18ADE6E31EB7A6FC00706C7B /* DriverMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6E21EB7A6FC00706C7B /* DriverMenuViewController.swift */; };
 		18ADE6E51EB7A71C00706C7B /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6E41EB7A71C00706C7B /* DeliveryViewController.swift */; };
 		18ADE6E71EB7A72B00706C7B /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6E61EB7A72B00706C7B /* StatisticViewController.swift */; };
+		18ADE6EC1EB7B42100706C7B /* DriverOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6EB1EB7B42100706C7B /* DriverOrder.swift */; };
+		18ADE6EE1EB7B47300706C7B /* DriverOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6ED1EB7B47300706C7B /* DriverOrderCell.swift */; };
 		38D0FD83F20DB76FCADEA575 /* Pods_FoodTaskerMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		18ADE6E21EB7A6FC00706C7B /* DriverMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverMenuViewController.swift; sourceTree = "<group>"; };
 		18ADE6E41EB7A71C00706C7B /* DeliveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
 		18ADE6E61EB7A72B00706C7B /* StatisticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		18ADE6EB1EB7B42100706C7B /* DriverOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverOrder.swift; sourceTree = "<group>"; };
+		18ADE6ED1EB7B47300706C7B /* DriverOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverOrderCell.swift; sourceTree = "<group>"; };
 		57F8F229AC9634BA3DCABF1F /* Pods-FoodTaskerMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.release.xcconfig"; sourceTree = "<group>"; };
 		6CF3F68A0CB29A5BE5FA588D /* Pods-FoodTaskerMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTaskerMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,10 +170,8 @@
 		18ADE6C61EB73DD100706C7B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				18ADE6C21EB73DA800706C7B /* User.swift */,
-				18ADE6CC1EB7631300706C7B /* Restaurant.swift */,
-				18ADE6D31EB76D7C00706C7B /* Meal.swift */,
-				18ADE6D71EB7723400706C7B /* Tray.swift */,
+				18ADE6EA1EB7B41300706C7B /* Customer */,
+				18ADE6EB1EB7B42100706C7B /* DriverOrder.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				18ADE6E91EB7A7B000706C7B /* Customer */,
+				18ADE6ED1EB7B47300706C7B /* DriverOrderCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -225,6 +228,17 @@
 				18ADE6D11EB76BBC00706C7B /* MealViewCell.swift */,
 				18ADE6D91EB7787800706C7B /* TrayViewCell.swift */,
 				18ADE6DD1EB7885E00706C7B /* OrderViewCell.swift */,
+			);
+			name = Customer;
+			sourceTree = "<group>";
+		};
+		18ADE6EA1EB7B41300706C7B /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6C21EB73DA800706C7B /* User.swift */,
+				18ADE6CC1EB7631300706C7B /* Restaurant.swift */,
+				18ADE6D31EB76D7C00706C7B /* Meal.swift */,
+				18ADE6D71EB7723400706C7B /* Tray.swift */,
 			);
 			name = Customer;
 			sourceTree = "<group>";
@@ -368,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ADE6EE1EB7B47300706C7B /* DriverOrderCell.swift in Sources */,
 				18ADE6C51EB73DBF00706C7B /* LoginViewController.swift in Sources */,
 				18ADE6DE1EB7885E00706C7B /* OrderViewCell.swift in Sources */,
 				18ADE6DA1EB7787800706C7B /* TrayViewCell.swift in Sources */,
@@ -394,6 +409,7 @@
 				18ADE6E51EB7A71C00706C7B /* DeliveryViewController.swift in Sources */,
 				18ADE6B51EB728C500706C7B /* OrderViewController.swift in Sources */,
 				18ADE6C31EB73DA800706C7B /* User.swift in Sources */,
+				18ADE6EC1EB7B42100706C7B /* DriverOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
