@@ -34,6 +34,10 @@
 		18ADE6DA1EB7787800706C7B /* TrayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6D91EB7787800706C7B /* TrayViewCell.swift */; };
 		18ADE6DC1EB77E6300706C7B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ADE6DB1EB77E6300706C7B /* CoreLocation.framework */; };
 		18ADE6DE1EB7885E00706C7B /* OrderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6DD1EB7885E00706C7B /* OrderViewCell.swift */; };
+		18ADE6E11EB7A6E200706C7B /* DriverOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6E01EB7A6E200706C7B /* DriverOrdersViewController.swift */; };
+		18ADE6E31EB7A6FC00706C7B /* DriverMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6E21EB7A6FC00706C7B /* DriverMenuViewController.swift */; };
+		18ADE6E51EB7A71C00706C7B /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6E41EB7A71C00706C7B /* DeliveryViewController.swift */; };
+		18ADE6E71EB7A72B00706C7B /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADE6E61EB7A72B00706C7B /* StatisticViewController.swift */; };
 		38D0FD83F20DB76FCADEA575 /* Pods_FoodTaskerMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +74,10 @@
 		18ADE6D91EB7787800706C7B /* TrayViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrayViewCell.swift; sourceTree = "<group>"; };
 		18ADE6DB1EB77E6300706C7B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		18ADE6DD1EB7885E00706C7B /* OrderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewCell.swift; sourceTree = "<group>"; };
+		18ADE6E01EB7A6E200706C7B /* DriverOrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverOrdersViewController.swift; sourceTree = "<group>"; };
+		18ADE6E21EB7A6FC00706C7B /* DriverMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverMenuViewController.swift; sourceTree = "<group>"; };
+		18ADE6E41EB7A71C00706C7B /* DeliveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
+		18ADE6E61EB7A72B00706C7B /* StatisticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
 		57F8F229AC9634BA3DCABF1F /* Pods-FoodTaskerMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.release.xcconfig"; sourceTree = "<group>"; };
 		6CF3F68A0CB29A5BE5FA588D /* Pods-FoodTaskerMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		B10409133B5E5B4DDE102A3B /* Pods_FoodTaskerMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTaskerMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,13 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				18ADE6C41EB73DBF00706C7B /* LoginViewController.swift */,
-				18ADE6A81EB7286400706C7B /* RestaurantViewController.swift */,
-				18ADE6AA1EB7287900706C7B /* CustomerMenuTableViewController.swift */,
-				18ADE6AC1EB7288D00706C7B /* MealListTableViewController.swift */,
-				18ADE6AE1EB728A000706C7B /* MealDetailsViewController.swift */,
-				18ADE6B01EB728AD00706C7B /* TrayViewController.swift */,
-				18ADE6B21EB728B900706C7B /* PaymentViewController.swift */,
-				18ADE6B41EB728C500706C7B /* OrderViewController.swift */,
+				18ADE6DF1EB7A6CF00706C7B /* Customer */,
+				18ADE6E81EB7A74100706C7B /* Driver */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -185,12 +188,45 @@
 		18ADE6CE1EB7644600706C7B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18ADE6E91EB7A7B000706C7B /* Customer */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		18ADE6DF1EB7A6CF00706C7B /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6A81EB7286400706C7B /* RestaurantViewController.swift */,
+				18ADE6AA1EB7287900706C7B /* CustomerMenuTableViewController.swift */,
+				18ADE6AC1EB7288D00706C7B /* MealListTableViewController.swift */,
+				18ADE6AE1EB728A000706C7B /* MealDetailsViewController.swift */,
+				18ADE6B01EB728AD00706C7B /* TrayViewController.swift */,
+				18ADE6B21EB728B900706C7B /* PaymentViewController.swift */,
+				18ADE6B41EB728C500706C7B /* OrderViewController.swift */,
+			);
+			name = Customer;
+			sourceTree = "<group>";
+		};
+		18ADE6E81EB7A74100706C7B /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				18ADE6E01EB7A6E200706C7B /* DriverOrdersViewController.swift */,
+				18ADE6E21EB7A6FC00706C7B /* DriverMenuViewController.swift */,
+				18ADE6E41EB7A71C00706C7B /* DeliveryViewController.swift */,
+				18ADE6E61EB7A72B00706C7B /* StatisticViewController.swift */,
+			);
+			name = Driver;
+			sourceTree = "<group>";
+		};
+		18ADE6E91EB7A7B000706C7B /* Customer */ = {
+			isa = PBXGroup;
+			children = (
 				18ADE6CF1EB7645900706C7B /* RestaurantViewCell.swift */,
 				18ADE6D11EB76BBC00706C7B /* MealViewCell.swift */,
 				18ADE6D91EB7787800706C7B /* TrayViewCell.swift */,
 				18ADE6DD1EB7885E00706C7B /* OrderViewCell.swift */,
 			);
-			name = View;
+			name = Customer;
 			sourceTree = "<group>";
 		};
 		6153575C9DAD19A9ABE10EE1 /* Pods */ = {
@@ -341,9 +377,11 @@
 				18ADE6B31EB728B900706C7B /* PaymentViewController.swift in Sources */,
 				18ADE6D81EB7723400706C7B /* Tray.swift in Sources */,
 				18ADE6D41EB76D7C00706C7B /* Meal.swift in Sources */,
+				18ADE6E31EB7A6FC00706C7B /* DriverMenuViewController.swift in Sources */,
 				18ADE6AF1EB728A000706C7B /* MealDetailsViewController.swift in Sources */,
 				18ADE6CD1EB7631300706C7B /* Restaurant.swift in Sources */,
 				18ADE6AB1EB7287900706C7B /* CustomerMenuTableViewController.swift in Sources */,
+				18ADE6E11EB7A6E200706C7B /* DriverOrdersViewController.swift in Sources */,
 				18ADE6D01EB7645900706C7B /* RestaurantViewCell.swift in Sources */,
 				18ADE6C11EB73D8B00706C7B /* FBManager.swift in Sources */,
 				18ADE6971EB7266500706C7B /* AppDelegate.swift in Sources */,
@@ -351,7 +389,9 @@
 				18ADE6AD1EB7288D00706C7B /* MealListTableViewController.swift in Sources */,
 				18ADE6C91EB7521D00706C7B /* APIManager.swift in Sources */,
 				18ADE6CB1EB7523700706C7B /* Constants.swift in Sources */,
+				18ADE6E71EB7A72B00706C7B /* StatisticViewController.swift in Sources */,
 				18ADE6D21EB76BBC00706C7B /* MealViewCell.swift in Sources */,
+				18ADE6E51EB7A71C00706C7B /* DeliveryViewController.swift in Sources */,
 				18ADE6B51EB728C500706C7B /* OrderViewController.swift in Sources */,
 				18ADE6C31EB73DA800706C7B /* User.swift in Sources */,
 			);
