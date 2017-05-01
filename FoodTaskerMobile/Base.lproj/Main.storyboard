@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="L7a-eG-kbV">
             <objects>
-                <viewController id="DFQ-G5-Szc" customClass="LoginViewController" customModule="FoodTaskerMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainController" id="DFQ-G5-Szc" customClass="LoginViewController" customModule="FoodTaskerMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cbT-Vc-eJk"/>
                         <viewControllerLayoutGuide type="bottom" id="3gs-y2-Slq"/>
