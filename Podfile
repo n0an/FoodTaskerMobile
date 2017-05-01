@@ -12,5 +12,7 @@ target 'FoodTaskerMobile' do
   pod 'FBSDKShareKit'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  
+  pod 'Charts'
 
 end

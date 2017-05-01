@@ -370,7 +370,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N97-TA-XUT">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N97-TA-XUT" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="10" y="94" width="355" height="483"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -388,6 +388,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuBarButton" destination="S8b-zX-b4m" id="2mb-wB-2u0"/>
+                        <outlet property="viewChart" destination="N97-TA-XUT" id="o6y-oo-aRL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VgT-cK-hJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
