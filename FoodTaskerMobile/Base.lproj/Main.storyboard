@@ -757,9 +757,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QBj-jd-Pr0" kind="show" identifier="ViewOrder" id="eIN-y3-rJS">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <action selector="placeOrder:" destination="4VU-Zo-deU" eventType="touchUpInside" id="Taj-Yy-3x1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -774,6 +772,7 @@
                     </view>
                     <connections>
                         <outlet property="cardTextField" destination="hV4-dM-oij" id="WBZ-TE-lbe"/>
+                        <segue destination="QBj-jd-Pr0" kind="show" identifier="ViewOrder" id="vls-dm-uHU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQY-JY-cry" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -809,7 +808,7 @@
                                     <constraint firstAttribute="height" constant="100" id="RaX-bo-ZY3"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OrderItemCell" id="X8l-Pe-1q4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OrderItemCell" id="X8l-Pe-1q4" customClass="OrderViewCell" customModule="FoodTaskerMobile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X8l-Pe-1q4" id="jY2-oX-hDj">
@@ -851,6 +850,11 @@
                                                 <constraint firstItem="vfb-qy-3uA" firstAttribute="leading" secondItem="eML-jg-TZh" secondAttribute="trailing" constant="15" id="oHK-pb-Kjr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbMealName" destination="vfb-qy-3uA" id="oyh-Jl-b9W"/>
+                                            <outlet property="lbQty" destination="eML-jg-TZh" id="MNc-Hg-KoY"/>
+                                            <outlet property="lbSubTotal" destination="agT-f1-eqW" id="ceK-ez-K0d"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -860,6 +864,9 @@
                             </tableView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KUq-cc-G55">
                                 <rect key="frame" x="0.0" y="64" width="375" height="453"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QBj-jd-Pr0" id="aoA-t4-fgh"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -880,7 +887,10 @@
                         <barButtonItem key="leftBarButtonItem" image="icon_menu_24dp" id="feZ-Af-LYr"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="lbStatus" destination="Z7b-M1-trc" id="p8m-CZ-bGF"/>
+                        <outlet property="map" destination="KUq-cc-G55" id="QWF-UD-WDQ"/>
                         <outlet property="menuBarButton" destination="feZ-Af-LYr" id="1Wh-7J-8gT"/>
+                        <outlet property="tbvMeals" destination="iNJ-JO-fxU" id="6OG-YL-yd6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnl-VY-5q6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1149,6 +1159,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="m2q-Gc-XeX"/>
         <segue reference="Lnu-gx-2nN"/>
-        <segue reference="eIN-y3-rJS"/>
+        <segue reference="vls-dm-uHU"/>
     </inferredMetricsTieBreakers>
 </document>
