@@ -14,9 +14,17 @@ import Foundation
 //let CLIENT_SECRET: String = "k8vx1k8ReCjbnCY1mjXCHSBPsHxxaIW44TpgcUEV6p0dV5fzdPrnJ6PQbYYwUNsoDDctHkHpeI413Nsk5TkUg8xucHQhlhe5AEJmJ0mLq8D1PvLA41JWGnE6c6TAo5xh"
 
 // Heroku server
-let BASE_URL: String = "https://fathomless-atoll-71215.herokuapp.com"
-let CLIENT_ID: String = "DAxGw0kcdYDwlGv1XWSeErwk7NuNKeNLbk83uxZI"
-let CLIENT_SECRET: String = "kSqTb8ttlm0UfGs1QvSTwkqk9VaY0yNpHh7QsWC0Ld9nmxqYRWl24DIqbJncIPMOwd3YGFZGBr3KXHJDP6KNofxFqzYJXws3lhsTtG2LgxXP7A3ZrAaG0MiL4tIXf390"
+//let BASE_URL: String = "https://fathomless-atoll-71215.herokuapp.com"
+//let CLIENT_ID: String = "DAxGw0kcdYDwlGv1XWSeErwk7NuNKeNLbk83uxZI"
+//let CLIENT_SECRET: String = "kSqTb8ttlm0UfGs1QvSTwkqk9VaY0yNpHh7QsWC0Ld9nmxqYRWl24DIqbJncIPMOwd3YGFZGBr3KXHJDP6KNofxFqzYJXws3lhsTtG2LgxXP7A3ZrAaG0MiL4tIXf390"
+
+
+// Linux server DigitalOcean
+let BASE_URL: String = "http://107.170.69.104:8000"
+let CLIENT_ID: String = "Hmvo47Qu9nKe1eQzsRFqENIewV5QT083rW7Vu8d0"
+let CLIENT_SECRET: String = "R4q1gYLsYQZthjgtUpmWIidvoU1tuOROC2eI468SOpdnMOQI5SAKteSCwywzedgw39K2f3TgfzPqIClDYL4PmoTyGWeqCqicgekE4NY0vzgncJzusA4Z8HNl3vyrBlGO"
+
+
 
 
 let USERTYPE_CUSTOMER = "customer"

@@ -31,12 +31,6 @@
                                         <color key="textColor" red="0.90980392160000001" green="0.2470588235" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Leo Trieu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTc-ee-RfZ">
-                                        <rect key="frame" x="20" y="182" width="335" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyU-jX-6hj">
                                         <rect key="frame" x="15" y="557" width="345" height="50"/>
                                         <color key="backgroundColor" red="0.30588235289999999" green="0.69019607839999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,11 +82,9 @@
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.12941176469999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="iio-i7-Lyo" firstAttribute="leading" secondItem="QZB-HN-DF2" secondAttribute="leading" constant="20" id="3Xf-zj-sM2"/>
-                                    <constraint firstAttribute="trailing" secondItem="lTc-ee-RfZ" secondAttribute="trailing" constant="20" id="Aer-ri-oFF"/>
                                     <constraint firstItem="AyU-jX-6hj" firstAttribute="leading" secondItem="QZB-HN-DF2" secondAttribute="leading" constant="15" id="DXt-WQ-xEa"/>
                                     <constraint firstItem="iio-i7-Lyo" firstAttribute="top" secondItem="QZB-HN-DF2" secondAttribute="top" constant="95" id="FaQ-WY-EFx"/>
                                     <constraint firstItem="AyU-jX-6hj" firstAttribute="top" secondItem="Bnn-6g-pL5" secondAttribute="bottom" constant="25" id="FsW-gm-P4O"/>
-                                    <constraint firstItem="lTc-ee-RfZ" firstAttribute="top" secondItem="iio-i7-Lyo" secondAttribute="bottom" constant="20" id="MJI-ra-BJV"/>
                                     <constraint firstAttribute="trailing" secondItem="Bnn-6g-pL5" secondAttribute="trailing" constant="15" id="ULa-OG-C5f"/>
                                     <constraint firstItem="Bnn-6g-pL5" firstAttribute="top" secondItem="eDx-aC-QBd" secondAttribute="bottom" constant="45" id="V0f-ly-FiR"/>
                                     <constraint firstItem="eDx-aC-QBd" firstAttribute="centerX" secondItem="QZB-HN-DF2" secondAttribute="centerX" id="ZLh-Cf-3zF"/>
@@ -101,7 +93,6 @@
                                     <constraint firstItem="4hb-c2-gL2" firstAttribute="top" secondItem="AyU-jX-6hj" secondAttribute="bottom" constant="10" id="fqw-Ql-jSj"/>
                                     <constraint firstItem="4hb-c2-gL2" firstAttribute="centerX" secondItem="QZB-HN-DF2" secondAttribute="centerX" id="l6D-ZB-brO"/>
                                     <constraint firstAttribute="bottom" secondItem="AyU-jX-6hj" secondAttribute="bottom" constant="60" id="rCv-mj-zew"/>
-                                    <constraint firstItem="lTc-ee-RfZ" firstAttribute="leading" secondItem="QZB-HN-DF2" secondAttribute="leading" constant="20" id="svx-A4-j9E"/>
                                     <constraint firstItem="Bnn-6g-pL5" firstAttribute="leading" secondItem="QZB-HN-DF2" secondAttribute="leading" constant="15" id="yE1-st-Ovk"/>
                                 </constraints>
                             </view>

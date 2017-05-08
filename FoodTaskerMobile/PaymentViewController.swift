@@ -17,6 +17,13 @@ class PaymentViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(PaymentViewController.endEdit))
+        self.view.addGestureRecognizer(gesture)
+    }
+    
+    func endEdit() {
+        self.view.endEditing(true)
     }
     
     @IBAction func placeOrder(_ sender: AnyObject) {
@@ -59,4 +66,12 @@ class PaymentViewController: UIViewController {
         }
     }
     
+}
+
+extension PaymentViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        cardTextField.resignFirstResponder()
+        return true
+    }
 }

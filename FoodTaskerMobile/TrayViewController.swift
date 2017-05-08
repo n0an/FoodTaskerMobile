@@ -155,7 +155,7 @@ extension TrayViewController: UITextFieldDelegate {
                 self.map.addAnnotation(dropPin)
             }
         }
-        
+        tbAddress.resignFirstResponder()
         return true
     }
 }
